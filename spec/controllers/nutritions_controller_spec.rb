@@ -12,7 +12,7 @@ describe NutritionsController, type: :controller do
     before(:each) do
       get :show, id: info.id
     end
-    it 'should find the exercise' do
+    it 'should find the nutrition' do
       expect(assigns(:nutrition)).to eql(info)
     end
     it 'should render the show template' do
@@ -50,11 +50,11 @@ describe NutritionsController, type: :controller do
   describe 'put update' do
     let!(:info) {Nutrition.create}
     before(:each) do
-      put :update, id: info.id, nutrition: FactoryBot.attributes_for(:nutrition, height: 'newVal')
+      put :update, id: info.id, nutrition: FactoryBot.attributes_for(:nutrition, height: 0)
     end
     it 'updates the nutritions' do
       info.reload
-      expect(info.height).to eql('newVal')
+      expect(info.height).to eql(0)
     end
   end
   describe 'destroy' do

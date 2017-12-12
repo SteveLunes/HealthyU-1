@@ -2,6 +2,9 @@
 
 = form_tag exercise_path(@exercise), :method => :put do
 
+  = label :exercise, :name, 'name'
+  = text_field :exercise, 'name'
+  
   = label :exercise, :muscle, 'muscle'
   = text_field :exercise, 'muscle'
 

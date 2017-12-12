@@ -1,7 +1,7 @@
 class ExercisesController < ApplicationController
-    
+    include SessionsHelper
     def exercise_params
-        params.require(:exercise).permit(:muscle, :description)
+        params.require(:exercise).permit(:name, :muscle, :description)
     end
     
     def index

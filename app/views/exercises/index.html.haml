@@ -27,14 +27,22 @@ Input the exercises you have completed for the week
 %table{:border => 1}
     %tbody
         %tr
+            %td= "Name"
             %td= "Muscle"
             %td= "Exercise"
     - @exercises.each do |exercise|
         %tr
-            %td= link_to(exercise.muscle, {:action => 'show', :id => exercise.id}, :class => 'action show')
-            %td= exercise.description
+            - if logged_in?
+                %td= link_to(exercise.name, {:action => 'show', :id => exercise.id}, :class => 'action show')
+                %td= exercise.muscle
+                %td= exercise.description
+            - else
+                %td= exercise.name
+                %td= exercise.muscle
+                %td= exercise.description
+                
 %br
-= link_to '<button type="button">Add New Exercise</button>'.html_safe, new_exercise_path
+// = link_to '<button type="button">Add New Exercise</button>'.html_safe, new_exercise_path
 %br
 %br
 %br

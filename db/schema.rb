@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20171204184912) do
 
   create_table "exercises", force: :cascade do |t|
+    t.string   "name"
     t.string   "muscle"
     t.string   "description"
     t.datetime "created_at"
@@ -21,10 +22,10 @@ ActiveRecord::Schema.define(version: 20171204184912) do
   end
 
   create_table "nutritions", force: :cascade do |t|
-    t.string   "height"
-    t.string   "weight"
-    t.string   "age"
-    t.string   "calories"
+    t.integer  "height"
+    t.integer  "weight"
+    t.integer  "age"
+    t.integer  "calories"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

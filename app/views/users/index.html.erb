@@ -5,7 +5,9 @@
   <% @users.each do |user| %>
     <li>
       <%= gravatar_for user, size: 50 %>
-      <%= link_to user.name, user %>
+      <%= user.name %>
     </li>
   <% end %>
 </ul>
+<li><%= link_to "Profile", current_user %></li>
+<li><%= link_to "Log out", logout_path, method: :delete %></li>

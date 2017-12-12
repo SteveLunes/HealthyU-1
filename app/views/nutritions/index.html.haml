@@ -97,9 +97,15 @@
             %td= "Caloric Intake"
     - @nutritions.each do |nutrition|
         %tr
-            %td= link_to(nutrition.height, {:action => 'show', :id => nutrition.id}, :class => 'action show')
-            %td= nutrition.weight
-            %td= nutrition.age
-            %td= nutrition.calories
+            - if logged_in?
+                %td= link_to(nutrition.height, {:action => 'show', :id => nutrition.id}, :class => 'action show')
+                %td= nutrition.weight
+                %td= nutrition.age
+                %td= nutrition.calories
+            - else
+                %td= nutrition.height
+                %td= nutrition.weight
+                %td= nutrition.age
+                %td= nutrition.calories
 %br
 %br

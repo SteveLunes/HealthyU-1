@@ -1,4 +1,5 @@
 class NutritionsController < ApplicationController
+    include SessionsHelper
     def nutrition_params
         params.require(:nutrition).permit(:height,:weight, :age)
     end
