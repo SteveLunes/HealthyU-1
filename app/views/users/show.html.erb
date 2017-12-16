@@ -9,7 +9,9 @@
     </section>
   </aside>
 </div>
+
 <%= link_to '<button type="button">Add New Exercise</button>'.html_safe, new_exercise_path %>
 <%= link_to '<button type="button">Show/Edit My Exercises</button>'.html_safe, exercises_path %>
 <%= link_to '<button type="button">Show/Edit My Nutrition</button>'.html_safe, nutritions_path %>
-<%= link_to '<button type="button">Back</button>'.html_safe, users_path %>
+
+<p><%= link_to 'Delete Account', user_path(@user), :method => :delete, :confirm => 'Are you sure?' %></p>

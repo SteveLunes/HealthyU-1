@@ -58,14 +58,15 @@ RSpec.describe UsersController, type: :controller do
   #     expect(response).to render_template('edit')
   #   end
   # end
-  # describe 'destroy' do
-  #   let!(:info) { FactoryBot.create(:user) }
-  #   it 'destroys the user' do
-  #     expect { delete :destroy, id: info.id
-  #     }.to change(User, :count).by(-1)
-  #   end
-  #   it 'redirects to the users page' do
-  #     delete :destroy, id: info.id
-  #     expect(response).to redirect_to('/users')
-  #   end
+   describe 'destroy' do
+     let!(:info) { FactoryBot.create(:user) }
+     it 'destroys the user' do
+       expect { delete :destroy, id: info.id
+       }.to change(User, :count).by(-1)
+     end
+     it 'redirects to the users page' do
+       delete :destroy, id: info.id
+       expect(response).to redirect_to('/users')
+     end
+   end
 end  

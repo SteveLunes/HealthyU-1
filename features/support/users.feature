@@ -43,7 +43,7 @@ Scenario: Successfully logging out
     
 Scenario: Successfully creating a new user
     Given I am on the homepage
-    And I press the "Login" button
+    And I press "Log in"
     Then I should be on the login page
     When I press "Sign up now!"
     Then I should be on the signup page
@@ -52,5 +52,12 @@ Scenario: Successfully creating a new user
     And I fill in "Password" with "healthyu"
     And I press the "Create my account" button
     Then I should be on the users page
+    
+Scenario: Successfully deleting a user
+    Background: Users in database
+    Given I am on the current users page
+    When I press "Delete"
+    Then I should be on the users page
+    And I should not see "Renee Russo"
     
     

@@ -1,6 +1,51 @@
 {
   "Cucumber Features": {
     "coverage": {
+      "/home/ubuntu/workspace/HealthyU/app/controllers/aboutus_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/HealthyU/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/HealthyU/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/HealthyU/app/helpers/sessions_helper.rb": [
+        1,
+        1,
+        2,
+        null,
+        1,
+        76,
+        null,
+        1,
+        62,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/HealthyU/app/helpers/users_helper.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/HealthyU/app/models/user.rb": [
+        1,
+        null
+      ],
       "/home/ubuntu/workspace/HealthyU/app/models/exercise.rb": [
         1,
         null
@@ -45,45 +90,6 @@
         null,
         null,
         null,
-        null
-      ],
-      "/home/ubuntu/workspace/HealthyU/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/HealthyU/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/HealthyU/app/helpers/sessions_helper.rb": [
-        1,
-        1,
-        2,
-        null,
-        1,
-        69,
-        null,
-        1,
-        57,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/HealthyU/app/helpers/users_helper.rb": [
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/HealthyU/app/models/user.rb": [
-        1,
         null
       ],
       "/home/ubuntu/workspace/HealthyU/app/controllers/homepage_controller.rb": [
@@ -163,10 +169,10 @@
       "/home/ubuntu/workspace/HealthyU/app/controllers/users_controller.rb": [
         1,
         1,
-        8,
+        10,
         null,
         1,
-        2,
+        3,
         null,
         1,
         2,
@@ -184,13 +190,17 @@
         1,
         1,
         1,
+        1,
+        1,
         null,
+        1,
+        1,
         1,
         null,
         null
       ]
     },
-    "timestamp": 1513117381
+    "timestamp": 1513459778
   },
   "RSpec": {
     "coverage": {
@@ -210,8 +220,8 @@
         0,
         null,
         1,
-        0,
-        0,
+        2,
+        2,
         null,
         null
       ],
@@ -354,9 +364,13 @@
         null,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
+        2,
+        2,
         null,
+        1,
+        1,
         1,
         null,
         null
@@ -376,6 +390,12 @@
         1,
         null
       ],
+      "/home/ubuntu/workspace/HealthyU/app/controllers/aboutus_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
       "/home/ubuntu/workspace/HealthyU/app/controllers/homepage_controller.rb": [
         0,
         0,
@@ -383,6 +403,6 @@
         0
       ]
     },
-    "timestamp": 1513117387
+    "timestamp": 1513459768
   }
 }

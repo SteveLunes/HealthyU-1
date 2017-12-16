@@ -33,6 +33,10 @@ Given /I am on the homepage/ do
   visit "/"
 end
 
+Given /I am on the aboutus page/ do
+  visit "/aboutus"
+end
+
 Given /I am on the users page/ do
   visit users_path
 end
@@ -45,12 +49,17 @@ Given /I am on the show nutrition page/ do
   visit nutrition_path(1)
 end
 
+Given /I am on the current users page/ do
+  visit user_path(1)
+end
+
+
 When("I click the exercise link") do
-  click_link("Exercises")
+  click_link("Exercises Page")
 end
 
 When("I click the nutrition link") do
-  click_link("Nutrition")
+  click_link("Nutritions Page")
 end
 
 When("I click on the muscle link") do

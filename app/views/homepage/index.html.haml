@@ -5,31 +5,8 @@
 
 %br
 %center
-%table{:border => 0, id: "team"}
-    %tbody
-        %tr
-            %th The Team
-        %tr
-            %td Mukul Batra
-        %tr
-            %td Steven Liounis
-        %tr
-            %td Renee Russo
-        %tr
-            %td Piruthviraj Angamuthu Selvaraju
-        %tr
-            %td Mei Sheinbaum
+    = image_tag("homepage.jpg", :alt => "HealthyU") 
 
-%br
-%center
-    = link_to '<button type="button">Login</button>'.html_safe, sessions_new_path
-
-%br
-%center
-    = link_to 'Exercises', exercises_path, {id: "links"} 
-
-    = link_to 'Nutrition', nutritions_path, {id: "links"} 
-    
-    = link_to 'All Users', users_path, {id: "links"}
+%brc
     
 

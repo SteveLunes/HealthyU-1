@@ -12,6 +12,12 @@ td#exer1{
     font-style: normal;
 }
 
+#image
+{
+    float: center;
+    
+}
+
 table#exer
 {
    border-color: white;
@@ -32,6 +38,25 @@ table
     font-size: 120px;
     color:white;
     
+}
+
+#sheading {
+    text-align: center;
+    font-size: 50px;
+    color:white;
+    
+}
+
+#ssheading {
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    
+}
+#dheading {
+    text-align: center;
+    font-size: 10px;
+    color:white;
 }
 
 table#exer th

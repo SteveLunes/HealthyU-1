@@ -18,10 +18,14 @@ class UsersController < ApplicationController
             render 'new'
         end
     end
+    def destroy
+        User.find(params[:id]).destroy
+        log_out
+        flash[:success] = "User deleted"
+        redirect_to users_url
+    end
     private
         def user_params
             params.require(:user).permit(:name, :email, :password)
         end
-    def destroy
-    end
 end

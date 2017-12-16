@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get 'homepage/index'
   resources :exercises
 
+  resources :aboutus
+
   resources :nutritions
   root 'homepage#index'
 end
