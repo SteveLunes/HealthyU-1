@@ -1,8 +1,10 @@
 # HeathyU
-HealthyU is a web application using Ruby on Rails framework to help users build muscle groups of their choice while getting the proper nutritional intake to ultimately create a HealthierU. 
+HealthyU is a web application using Ruby on Rails framework developed on the Cloud9 IDE to help users build muscle groups of their choice while getting the proper nutritional intake to ultimately create a HealthierU. 
 We work so you work out.
 
 What would be more convenient other than knowing what muscle to work out and what food to eat? 
 We're going to help you keep a record of your workout logs and the caloric intake as well as the macros you'll need to achieve your goal.
 
 Our team consists of Mukul Batra, Renee Russo, Piruthviraj Angamuthu Selvaraju, Steven Liounis and Mei Sheinbaum.
+
+This repository represents as far as we came in terms of designing and implementing the website. We've fully implemented the exercise and nutrition pages, as well as basic login. The most recent version of the website is available at the Heroku URL: young-forest-85901.herokuapp.com, but can also be run directly from the c9 IDE using the command: 'rails server -p $PORT -b $IP'  Please contact any team members if you want to make improvements/suggestions.
